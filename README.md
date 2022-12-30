@@ -36,12 +36,22 @@ pip install mail_automation
 ```python
 import mail_automation
 
-# returns 'response'
-mail_automation.send_message(subject='foo', text='bar', recipient='hansv149@gmail.com')
+"""send message on a specific time"""
+mail_automation.send_scheduled(subject='foo', text='bar', recipient='hansv149@gmail.com', date='MM DD hh:mm:ss')
 
-# returns 'response'
-mail_automation.send_attachment(subject='foo', text='bar', attachment='./data/gg1.jpg', recipient='hansv149@gmail.com')
+"""send a single message to a single recipient"""
+mail_automation.send(subject='foo', text='bar', recipient='hansv149@gmail.com')
 
+"""send the same email to a bunch of people"""
+"""will be asked for multiple inputs with prompts to select recipients"""
+mail_automation.spam(subject='foo', text='bar')
+
+"""send a single image to a single recipient"""
+mail_automation.attach(subject='foo', text'bar', attachment_path='your/image/path', recipient='hansv149@gmail.com')
+
+"""send the same attachment to a bunch of people"""
+"""will be asked for multiple inputs with prompts to select recipients"""
+mail_automation.spam_attach(subject='foo', text='bar', attachment_path='your/image/path')
 ```
 
 ## CONTRIBUTING
