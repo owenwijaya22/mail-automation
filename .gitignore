@@ -1,1 +1,3 @@
 /data/config.json
+/tests/__pycache__
+/mail_automation/__pycache__
