@@ -51,6 +51,12 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
+## TESTS
+
+`git clone https://github.com/owenwijaya22/mail-automation.git`
+
+Run `py -m tests.test` from  `mail-automation` directory
+
 ## LICENSE
 
 MIT License
